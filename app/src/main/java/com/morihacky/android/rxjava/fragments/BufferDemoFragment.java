@@ -89,6 +89,10 @@ public class BufferDemoFragment extends BaseFragment {
     // -----------------------------------------------------------------------------------
     // Main Rx entities
 
+    /**
+     * 每次的点击事件，被观察者都发出1（发到缓冲池中，观察者并不会立即执行onNext），并被观察者观察到，使用list集合保存
+     * @return
+     */
     private Disposable _getBufferedDisposable() {
         return RxView.clicks(_tapBtn)
                 .map(
