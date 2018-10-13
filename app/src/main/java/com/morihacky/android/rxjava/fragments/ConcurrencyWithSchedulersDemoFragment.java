@@ -40,6 +40,7 @@ public class ConcurrencyWithSchedulersDemoFragment extends BaseFragment {
 
     private LogAdapter _adapter;
     private List<String> _logs;
+    //disposable容器，用来管理 多个DisposableObserver对象
     private CompositeDisposable _disposables = new CompositeDisposable();
     private Unbinder unbinder;
 
@@ -57,8 +58,7 @@ public class ConcurrencyWithSchedulersDemoFragment extends BaseFragment {
     }
 
     @Override
-    public View onCreateView(
-            LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View layout = inflater.inflate(R.layout.fragment_concurrency_schedulers, container, false);
         unbinder = ButterKnife.bind(this, layout);
         return layout;
@@ -80,6 +80,11 @@ public class ConcurrencyWithSchedulersDemoFragment extends BaseFragment {
         _disposables.add(d);
     }
 
+    /**
+     * 获取 被观察者
+     * 在其中包含耗时操作
+     * @return 被观察者
+     */
     private Observable<Boolean> _getObservable() {
         return Observable.just(true)
                 .map(
