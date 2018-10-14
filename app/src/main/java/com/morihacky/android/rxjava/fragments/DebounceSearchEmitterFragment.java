@@ -76,6 +76,8 @@ public class DebounceSearchEmitterFragment extends BaseFragment {
 
         _disposable =
                 RxTextView.textChangeEvents(_inputSearchText)
+                        //debounce操作符 删除超时前发出的事件，也就是只会发射400ms到期后的TextViewTextChanged事件
+                        //然后被观察者捕获，观察者在AndroidSchedulers.mainThread()线程再更新UI
                         .debounce(400, TimeUnit.MILLISECONDS) // default Scheduler is Computation
                         .filter(changes -> isNotNullOrEmpty(changes.text().toString()))
                         .observeOn(AndroidSchedulers.mainThread())

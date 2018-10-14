@@ -11,3 +11,9 @@
 2秒内点击多次按钮（多次操作），会在2秒后根据点击次数更新UI，显示点击了几次。
 
 学习Disposable，map，buffer的使用
+
+##fragments.DebounceSearchEmitterFragment
+
+在输入框中输入完成后再执行相应操作（400ms），不会每输入一个字符就触发事件。
+
+RxTextView类的使用，debounce操作符，filter操作符使用。
