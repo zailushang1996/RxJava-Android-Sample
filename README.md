@@ -17,3 +17,7 @@
 在输入框中输入完成后再执行相应操作（400ms），不会每输入一个字符就触发事件。
 
 RxTextView类的使用，debounce操作符，filter操作符使用。
+
+## fragments.RetrofitFragment
+
+结合Retrofit请求GitHub的api，重点flatMap操作符的使用
