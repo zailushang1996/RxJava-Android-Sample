@@ -1,10 +1,10 @@
-##fragments.ConcurrencyWithSchedulersDemoFragment
+## fragments.ConcurrencyWithSchedulersDemoFragment
 
 把耗时的一些IO操作或者需要长时间处理的计算放到其他线程，并在完成操作后回到主线程更新UI。
 
 使用CompositeDisposable管理DisposableObserver，just操作符，map操作符
 
-##fragments.BufferDemoFragment
+## fragments.BufferDemoFragment
 
 使用buffer缓冲事件操作
 
@@ -12,7 +12,7 @@
 
 学习Disposable，map，buffer的使用
 
-##fragments.DebounceSearchEmitterFragment
+## fragments.DebounceSearchEmitterFragment
 
 在输入框中输入完成后再执行相应操作（400ms），不会每输入一个字符就触发事件。
 
