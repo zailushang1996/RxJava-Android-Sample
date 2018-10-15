@@ -30,5 +30,10 @@ RxTextView类的使用，debounce操作符，filter操作符使用。
 
 使用Flowable（解决背压）实现简单轮训及增长型轮训  interval操作符的使用
 
+## rxbus.RxBusDemoFragment
+
+使用rxJava实现事件总线，学习RxBus封装，Flowable背压的buffer操作符使用，debounce使用
+
+
 
 
