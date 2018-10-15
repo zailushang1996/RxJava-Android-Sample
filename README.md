@@ -20,4 +20,10 @@ RxTextView类的使用，debounce操作符，filter操作符使用。
 
 ## fragments.RetrofitFragment
 
-结合Retrofit请求GitHub的api，重点flatMap操作符的使用
+结合Retrofit请求GitHub的api，重点flatMap操作符的使用，zip操作符使用
+
+## fragments.DoubleBindingTextViewFragment
+
+使用PublishProcessor（发布处理器）实现数据的双向绑定
+
+##
