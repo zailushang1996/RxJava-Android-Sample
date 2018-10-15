@@ -34,6 +34,8 @@ RxTextView类的使用，debounce操作符，filter操作符使用。
 
 使用rxJava实现事件总线，学习RxBus封装，Flowable背压的buffer操作符使用，debounce使用
 
+## fragments.FormValidationCombineLatestFragment
 
+使用combineLatest验证表单输入，DisposableSubscriber（一次性订阅者，用于Flowable）的使用
 
 
