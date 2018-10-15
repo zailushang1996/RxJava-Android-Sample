@@ -26,4 +26,9 @@ RxTextView类的使用，debounce操作符，filter操作符使用。
 
 使用PublishProcessor（发布处理器）实现数据的双向绑定
 
-##
+## fragments.PollingFragment
+
+使用Flowable（解决背压）实现简单轮训及增长型轮训  interval操作符的使用
+
+
+
