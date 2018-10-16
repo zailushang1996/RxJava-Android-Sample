@@ -42,6 +42,10 @@ RxTextView类的使用，debounce操作符，filter操作符使用。
 
 concat操作符，concatEager操作符等等的使用
 
+## fragments.TimingDemoFragment
+
+flowable被观察者（背压）的timer，interval，take等操作符的使用
+
 
 
 
