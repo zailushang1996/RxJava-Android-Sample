@@ -46,6 +46,10 @@ concat操作符，concatEager操作符等等的使用
 
 flowable被观察者（背压）的timer，interval，take等操作符的使用
 
+## fragments.TimeoutDemoFragment
+
+使用timeout（）实现子任务处理耗时过长自动退出，或发射其他可观察源
+
 
 
 
