@@ -50,6 +50,10 @@ flowable被观察者（背压）的timer，interval，take等操作符的使用
 
 使用timeout（）实现子任务处理耗时过长自动退出，或发射其他可观察源
 
+## fragments.ExponentialBackoffFragment
+
+使用Flowable的retryWhen（），range（）实现重复发射
+
 
 
 
